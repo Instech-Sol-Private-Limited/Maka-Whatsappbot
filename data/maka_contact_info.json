@@ -1,0 +1,34 @@
+{
+  "phone": [],
+  "email": [
+    "ventas@maka.com.do"
+  ],
+  "address": [
+    "Santo Domingo, Dominican Republic"
+  ],
+  "social_media": {
+    "instagram": "https://www.instagram.com/makacapillaryhealth/",
+    "youtube": "https://www.youtube.com/channel/uclzkjajfl38bipiyqfjezha",
+    "tiktok": "https://www.tiktok.com/@makacapillaryhealth",
+    "whatsapp": "https://api.whatsapp.com/send/?phone=18099097216&text&type=phone_number&app_absent=0"
+  },
+  "delivery": {
+    "coverage": "We deliver everywhere in Dominican Republic",
+    "cost": "RD$200 delivery fee",
+    "free_delivery_threshold": "RD$2500",
+    "free_delivery_note": "Free delivery on orders above RD$2500",
+    "payment_methods": {
+      "cash_on_delivery": {
+        "available": true,
+        "location": "Only available in Santo Domingo"
+      }
+    }
+  },
+  "location": {
+    "google_maps": "https://maps.google.com/?q=18.456389,-69.955917"
+  },
+  "website": "https://makacapilarhealthdr.com",
+  "whatsapp": [
+    "18099097216"
+  ]
+}
