@@ -388,7 +388,7 @@ Your responsibilities:
 6. Remember the conversation context and refer to previous messages when relevant
 
 IMPORTANT DELIVERY INFORMATION:
-- We deliver everywhere in Dominican Republic
+- We deliver everywhere in World
 - Delivery cost: RD$200
 - FREE delivery on orders above RD$2500
 - Cash on Delivery (Pay at delivery) is ONLY available in Santo Domingo
@@ -595,24 +595,24 @@ async def webhook(request: Request):
             return {"status": "ok"}
         
         # Check if bot is active before processing message
-        # if not bot_checker.is_bot_active():
-        #     logger.info("Bot is currently inactive - staying silent (no message sent)")
+        if not bot_checker.is_bot_active():
+            logger.info("Bot is currently inactive - staying silent (no message sent)")
             
-        #     # Log the incoming message for monitoring purposes
-        #     try:
-        #         value = body["entry"][0]["changes"][0]["value"]
-        #         if "messages" in value:
-        #             message = value["messages"][0]
-        #             phone_number = message["from"]
-        #             message_text = message.get("text", {}).get("body", "")
+            # Log the incoming message for monitoring purposes
+            try:
+                value = body["entry"][0]["changes"][0]["value"]
+                if "messages" in value:
+                    message = value["messages"][0]
+                    phone_number = message["from"]
+                    message_text = message.get("text", {}).get("body", "")
                     
-        #             logger.info(f"Received message during inactive hours from {phone_number}: {message_text}")
-        #             logger.info("Message logged - no automated response sent (manual handling required)")
-        #     except Exception as e:
-        #         logger.error(f"Error logging inactive message: {e}")
+                    logger.info(f"Received message during inactive hours from {phone_number}: {message_text}")
+                    logger.info("Message logged - no automated response sent (manual handling required)")
+            except Exception as e:
+                logger.error(f"Error logging inactive message: {e}")
             
-        #     # Return success without sending any message
-        #     return {"status": "inactive_silent"}
+            # Return success without sending any message
+            return {"status": "inactive_silent"}
         
         # Bot is active - process message normally
         if process_whatsapp_message(body):

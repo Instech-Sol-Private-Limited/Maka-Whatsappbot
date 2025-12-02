@@ -13,7 +13,7 @@
     "whatsapp": "https://api.whatsapp.com/send/?phone=18099097216&text&type=phone_number&app_absent=0"
   },
   "delivery": {
-    "coverage": "We deliver everywhere in Dominican Republic",
+    "coverage": "We deliver everywhere in the world",
     "cost": "RD$200 delivery fee",
     "free_delivery_threshold": "RD$2500",
     "free_delivery_note": "Free delivery on orders above RD$2500",

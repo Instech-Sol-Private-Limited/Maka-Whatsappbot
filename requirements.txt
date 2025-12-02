@@ -15,16 +15,3 @@ python-dotenv==1.1.1
 
 
 
-It should share that it’s an AI agent and should ask if they want to talk to the agent. If they say yes, the chat will be directed to the agent
-
-Pay at time delivery is only available in Santo Domingo
-
-Do delivery everywhere
-
-Location is at Google Map "18°27'23.0"N 69°57'21.3"W"
-
-Cost of the delivery is 200
-and if the order is above 250+ delivery will be free.
-
-Our employees work from 8am to 6pm from Monday to Friday & 8am to 5am.
-But I’m here as your assistance for this period.
